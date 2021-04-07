@@ -7,7 +7,9 @@ defmodule PrimeNumber do
     acc = acc + 1
     if acc < n && rem(n, acc) == 0 do
       "#{n} is not prime"
-    else                                            verify_rest(n, acc)
+    else
+      verify_rest(n, acc)
     end
   end
+
 end
